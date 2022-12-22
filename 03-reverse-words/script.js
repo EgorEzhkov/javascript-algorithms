@@ -9,7 +9,11 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+	if (typeof str == 'string') {
+		return str.split(' ').reverse().join(' ');
+	} else {
+		return 'Вы ввели не строчный тип данных';
+	};
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

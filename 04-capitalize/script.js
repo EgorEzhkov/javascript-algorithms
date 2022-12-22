@@ -6,10 +6,19 @@
  *
 */
 
-function capitalize(str) {
-    // Напишите код здесь
-}
-
 // Протестируйте решение, вызывая функцию с разными аргументами:
+
+
+function capitalize(str) {
+	if (typeof str == 'string') {
+		let res=[];
+		str.split(' ').forEach(function(word){
+			res.push(word.slice(0, 1).toUpperCase() + word.slice(1));
+		})
+		return res.join(' ');
+	} else {
+		return "Вы ввели нестрочный тип данных"
+	}
+}
 
 console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"

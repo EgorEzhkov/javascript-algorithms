@@ -14,7 +14,17 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+	const strRevers = str.split('').reverse().join('');
+	if (typeof str == 'string') {
+		if (str.toLowerCase() === strRevers.toLowerCase()) {
+			return true;
+		} else { 
+			return false;
+		}
+	} else {
+		console.log('Вы ввели не строчный тип данных');
+	}
+
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
