@@ -8,7 +8,7 @@
 */
 
 function uniq(arr) {
-	let res = [];
+	const res = [];
 	arr.forEach(el => {
 		if (!res.includes(el)) {
 			res.push(el)
